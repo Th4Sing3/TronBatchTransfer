@@ -50,7 +50,7 @@ once wallets data retreived, it will ask you if you are sure you want to transfe
 
 Type yes and all the transaction needed to be done will be done.  
 
-![alt text](https://github.com/Th4Sing3/TronBatchTransfer/blob/master/result.PNG?raw=true)
+![alt text](https://github.com/Th4Sing3/TronBatchTransfer/blob/master/res.PNG?raw=true)
 
 If you found this app usefull you can pay me a beer here
 
