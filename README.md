@@ -27,3 +27,29 @@ After SENDTOPK= you put the private key of the wallet you want to send to.
  SENDTO=targetWalletAddress
 
  SENDTOPK=targetWalletPrivateKey
+
+
+After you've created the .env file at the root of the project, you should be good to go
+
+open a node command prompt
+
+Navigate to the project folder
+
+type npm install
+
+then type node index.js
+
+You should see :
+
+Retreiving wallets data
+... % completed
+
+once wallets data retreived, it will ask you if you are sure you want to transfer all available trx to target wallet...
+
+Type yes and all the transaction needed will be made  
+
+![alt text](https://github.com/Th4Sing3/TronBatchTransfer/blob/master/result.PNG?raw=true)
+
+If you found this app usefull you can pay me a beer here
+
+ TRON wallet : THXp6NSTbqDBt6p1CpcFc38zLJN9BTdDDd
