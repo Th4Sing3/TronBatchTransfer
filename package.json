@@ -1,0 +1,20 @@
+{
+  "name": "tronbatchtransfer",
+  "version": "1.0.0",
+  "description": "it get balance of wallets in a list then transfer all available amounts to another wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Th4Sing3/TronBatchTransfer.git)"
+  },
+  "author": "Christian St-Gelais <thasinge@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "dotenv": "^8.1.0",
+    "tronweb": "^2.7.1"
+  }
+}
