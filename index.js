@@ -24,14 +24,14 @@ async function Start(){
 		process.stdout.write(`Retreiving wallets data\n`); 
 	}
 	
-	/* get data for for target wallet */
+	/* get data for target wallet */
 	let tronWeb = new TronWeb({fullHost: fullHost, privateKey: sendToPk});
 	let wallet = await tronWeb.trx.getAccount(sendTo);		
 	wallet.usableAddress = tronWeb.address.fromPrivateKey(sendToPk);
 	wallet.readableAccountName = wallet.account_name ? tronWeb.toAscii(wallet.account_name) : ``; 
 	targetData = wallet;
 		
-	/* get data for each wallet */
+	/* get data for each wallets in list */
 	for(i; i < nbWallets; i++){		
 		tronWeb = new TronWeb({fullHost: fullHost, privateKey: myPks[i]});
 		wallet = await tronWeb.trx.getAccount(myWallets[i]);		
@@ -39,7 +39,7 @@ async function Start(){
 		wallet.readableAccountName = wallet.account_name ? tronWeb.toAscii(wallet.account_name) : ``; 
 		walletsData.push(wallet);
 		if(verbose) ShowProgress(Math.round(i/nbWallets*100));		
-    }
+    	}
 	
 	if(verbose) {	
 		ShowProgress(Math.round(i/nbWallets*100));	
