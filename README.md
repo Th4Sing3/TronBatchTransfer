@@ -35,18 +35,20 @@ open a node command prompt
 
 Navigate to the project folder
 
-type npm install
+type : npm install
 
-then type node index.js
+then 
+
+type : node index.js
 
 You should see :
 
 Retreiving wallets data
 ... % completed
 
-once wallets data retreived, it will ask you if you are sure you want to transfer all available trx to target wallet...
+once wallets data retreived, it will ask you if you are sure you want to transfer all available TRX to target wallet...
 
-Type yes and all the transaction needed will be made  
+Type yes and all the transaction needed to be done will be done.  
 
 ![alt text](https://github.com/Th4Sing3/TronBatchTransfer/blob/master/result.PNG?raw=true)
 
