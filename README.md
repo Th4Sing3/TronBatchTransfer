@@ -19,7 +19,11 @@ After SENDTOPK= you put the private key of the wallet you want to send to.
 .env file exemple :
 
  NODE_ENV=development
- WALLETS=walletAddress1 walletAddress2 walletAddress3 ... 
- PKS=walletPrivateKey1 walletPrivateKey2 walletPrivateKey3 ...   
+
+ WALLETS=walletAddress1 walletAddress2 walletAddress3 ...
+ 
+ PKS=walletPrivateKey1 walletPrivateKey2 walletPrivateKey3 ...
+   
  SENDTO=targetWalletAddress
+
  SENDTOPK=targetWalletPrivateKey
