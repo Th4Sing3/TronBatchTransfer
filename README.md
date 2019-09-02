@@ -1,23 +1,28 @@
 # TronBatchTransfer
-It get balance of wallets in a list then transfer all available amounts to another wallet.
+This utility gets the balance of multiple wallets and then offers to transfer all available amounts to another wallet.
 
-To make it work you will have to create an .env file at the root of the project and put all your wallets address there.
+## Configuration
 
-You can put as much wallets you want.
+You will have to create an .env file at the root of the project and put all your wallet addresses there.
 
-It should have the same number of wallet than private key.
+You can have as many wallets you want.
 
-After WALLETS= you put the wallets addresse you want to send from all separated by space.
+It should have as many private keys as there are wallets.
 
-After PKS= you put the private keys associated to the wallets you added all separated by space too.
+#### Options :
+```
+WALLETS= the wallet addresses you want to SEND from, all space-separated.
 
-After SENDTO= you put the wallet address where you want to send to.
+PKS= the private keys associated to the wallets you added, all space-separated too, in the same order.
 
-After SENDTOPK= you put the private key of the wallet you want to send to.
+SENDTO= the wallet address you want to RECEIVE the funds.
 
+SENDTOPK= the private key of the wallet you want to RECEIVE the funds.
+```
 
-.env file should look like that :
+Your .env file should look like :
 
+```
  NODE_ENV=development
 
  WALLETS=walletAddress1 walletAddress2 walletAddress3
@@ -27,31 +32,38 @@ After SENDTOPK= you put the private key of the wallet you want to send to.
  SENDTO=targetWalletAddress
 
  SENDTOPK=targetWalletPrivateKey
-
+```
 
 After you've created the .env file at the root of the project, you should be good to go
 
-open a node command prompt
+## Installation
 
-Navigate to the project folder
+You will only need to do this once.
 
-type : npm install
+1. Open a command prompt
+2. Navigate to the project folder
+3. Type `npm install` and press enter
+4. Configure the .env file
 
-then 
+## Usage
 
-type : node index.js
+Run the application in the command prompt using
+```
+node index.js
+````
 
 You should see :
+```
+> Retreiving wallets data
+> ... % completed
+```
 
-Retreiving wallets data
-... % completed
+Once the wallets data is retrieved, it will ask you if you are sure you want to transfer all available TRX to the target wallet.
 
-once wallets data retreived, it will ask you if you are sure you want to transfer all available TRX to target wallet...
-
-Type yes and all the transaction needed to be done will be done.  
+Type yes and the utility will start transfering all funds to the target wallet.
 
 ![alt text](https://github.com/Th4Sing3/TronBatchTransfer/blob/master/res.PNG?raw=true)
 
 If you found this app usefull you can pay me a beer here
 
- TRON wallet : THXp6NSTbqDBt6p1CpcFc38zLJN9BTdDDd
+TRON wallet : THXp6NSTbqDBt6p1CpcFc38zLJN9BTdDDd
